@@ -38,7 +38,7 @@ You can either clone the repository with Git or download it as a ZIP file:
 
 - To clone:
   ```bash
-  git clone <repository-link>
+  git clone <https://github.com/yashng7/resume.git>
   ```
 - Or download the ZIP file from [GitHub](#) and extract it.
 
@@ -48,6 +48,9 @@ Install the necessary dependencies to get the project running locally. In your t
 
 ```bash
 pnpm install
+```
+```bash
+pnpm run dev
 ```
 
 
