@@ -4,6 +4,12 @@ Welcome to the **Minimal Next.js Portfolio Resume Template**! 🚀 This is a cle
 
 ---
 
+## 🖼️ Template Preview
+
+![Minimal Resume Template](./public/thumbnail.png)
+
+---
+
 ## 👋 About This Template
 
 This single-page template is built with **Next.js** and offers the following features:
