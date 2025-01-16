@@ -11,6 +11,7 @@ This single-page template is built with **Next.js** and offers the following fea
 ### Features:
 
 - 🧑‍💻 **Responsive Design:** Looks great on all devices including mobile, tablet, and desktop.
+- 🌙 **Dark Mode Support:** Toggle between light and dark themes for comfortable viewing.
 - 🎨 **Customizable Layout:** Simple layout for easy customization of your resume details.
 - 📄 **Print Resume Option:** Allows users to print or download your resume directly from the page.
 - ⚡ **Lightweight & Fast:** Built for speed with minimal dependencies.# 🖥️ Minimal Next.js Portfolio Resume Template
@@ -49,8 +50,24 @@ Install the necessary dependencies to get the project running locally. In your t
 ```bash
 pnpm install
 ```
+### 3. **Run the Development Server**
+
+Once the dependencies are installed, start the development server with:
+
 ```bash
 pnpm run dev
 ```
 
+### 4. **Customize Your Content**
 
+To personalize the template with your information:
+
+1. Navigate to `/app/content.ts`
+2. Update the content sections:
+  - Personal details
+  - Skills list
+  - Work experience
+  - Education history
+  - Certifications
+
+The changes will automatically reflect in your portfolio.
