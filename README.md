@@ -6,7 +6,7 @@ Welcome to the **Minimal Next.js Portfolio Resume Template**! 🚀 This is a cle
 
 ## 🖼️ Template Preview
 
-![Minimal Resume Template](./public/thumbnail.png)
+![Minimal Resume Template](https://github.com/yashng7/resume/blob/main/public/images/thumbnail.png)
 
 ---
 
@@ -56,6 +56,7 @@ Install the necessary dependencies to get the project running locally. In your t
 ```bash
 pnpm install
 ```
+
 ### 3. **Run the Development Server**
 
 Once the dependencies are installed, start the development server with:
@@ -70,10 +71,11 @@ To personalize the template with your information:
 
 1. Navigate to `/app/content.ts`
 2. Update the content sections:
-  - Personal details
-  - Skills list
-  - Work experience
-  - Education history
-  - Certifications
+
+- Personal details
+- Skills list
+- Work experience
+- Education history
+- Certifications
 
 The changes will automatically reflect in your portfolio.
