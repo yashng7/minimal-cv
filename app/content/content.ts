@@ -37,7 +37,7 @@ export interface ResumeContent {
   certifications?: Array<{
     title: string;
     subtitle: string;
-    description: String;
+    description: string;
     link: string;
     period?: string;
     achievements?: string[];

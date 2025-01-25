@@ -1,8 +1,8 @@
 import { Github, Mail, Linkedin, MapPin, Calendar, Globe } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import type { ResumeContent } from "@/app/content/content";
 import { Separator } from "../ui/separator";
 import Link from "next/link";
+import Image from "next/image";
 
 type HeaderProps = {
   profile: ResumeContent["profile"];
@@ -14,7 +14,7 @@ export function Header({ profile }: HeaderProps) {
       <header>
         <div className="flex items-start gap-4">
           {profile.image && (
-            <img
+            <Image
               src={profile.image || "/placeholder.svg"}
               alt={profile.name}
               className="w-24 h-24 rounded-full object-cover border-2 border-primary/20 print:w-20 print:h-20 bg-white self-center grayscale hover:grayscale-0"
