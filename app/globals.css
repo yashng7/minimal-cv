@@ -79,95 +79,85 @@ body {
 
 @media print {
   @page {
-    margin: 0.75in;
+    margin: 0.4in;
     size: letter portrait;
   }
-  
+
   body {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
-    font-size: 12pt;
-    line-height: 1.5;
+    font-size: 11pt;
+    line-height: 1.2;
   }
 
-  /* Hide elements not needed in print */
-  .print\:hidden {
-    display: none !important;
+  h1 {
+    font-size: 14pt !important;
+    margin-bottom: 0.2em !important;
   }
 
-  /* Clean styling for print */
+  h2 {
+    font-size: 13pt !important;
+    margin-bottom: 0.2em !important;
+    color: #2c2c2c !important;
+  }
+
+  h3 {
+    font-size: 12pt !important;
+    margin-bottom: 0.1em !important;
+  }
+
+  p,
+  li {
+    font-size: 11pt !important;
+    line-height: 1.2 !important;
+  }
+
+  section {
+    margin-bottom: 0.3em !important;
+  }
+
+  .card {
+    border: none !important;
+    padding: 0.2em 0 !important;
+    margin-bottom: 0.2em !important;
+    box-shadow: none !important;
+  }
+
   .bg-secondary {
-    background-color: #f8f8f8 !important;
-    border: 1px solid #eee !important;
+    background-color: transparent !important;
+    border: 1px solid #ddd !important;
+    padding: 0.1em 0.3em !important;
+  }
+
+  .space-y-6 {
+    margin-top: 0 !important;
+  }
+
+  section + section {
+    margin-top: 0.3em !important;
+  }
+
+  ul {
+    margin-left: 0.3em !important;
+    padding-left: 1em !important;
+  }
+
+  li {
+    margin-bottom: 0.1em !important;
+  }
+  li::before {
+    content: "• ";
+    position: absolute;
+    margin-left: -1em;
   }
 
   .text-muted-foreground {
     color: #555 !important;
   }
 
-  .shadow-sm, .shadow-md {
+  .shadow-sm,
+  .shadow-md {
     box-shadow: none !important;
-  }
-
-  /* Typography adjustments for print */
-  h1 {
-    font-size: 24pt !important;
-    margin-bottom: 0.5em !important;
-  }
-
-  h2 {
-    font-size: 16pt !important;
-    margin-bottom: 0.5em !important;
-    color: #2c2c2c !important;
-  }
-
-  h3 {
-    font-size: 13pt !important;
-    margin-bottom: 0.3em !important;
-  }
-
-  p, li {
-    font-size: 11pt !important;
-    line-height: 1.4 !important;
-  }
-
-  /* Layout adjustments */
-  section {
-    break-inside: avoid;
-    margin-bottom: 1em !important;
-    page-break-inside: avoid;
-  }
-
-  .card {
-    border: none !important;
-    padding: 0.5em 0 !important;
-    margin-bottom: 0.5em !important;
-    box-shadow: none !important;
-  }
-
-  /* Skill tags */
-  .bg-secondary {
-    background-color: transparent !important;
-    border: 1px solid #ddd !important;
-    padding: 0.2em 0.5em !important;
-  }
-
-  /* Remove unnecessary spacing */
-  .space-y-6 {
-    margin-top: 0 !important;
-  }
-
-  /* Ensure proper margins between sections */
-  section + section {
-    margin-top: 1em !important;
-  }
-
-  /* Improve list styling */
-  ul {
-    margin-left: 1em !important;
-  }
-
-  li {
-    margin-bottom: 0.3em !important;
   }
 }
+
