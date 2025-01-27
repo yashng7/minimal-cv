@@ -7,9 +7,9 @@ type SummaryProps = {
 export function Summary({ summary }: SummaryProps) {
   return (
     <>
-      <section>
-        <h2 className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-200">Professional Summary</h2>
-        <p className="text-muted-foreground text-sm leading-relaxed">{summary}</p>
+      <section className="space-y-1 print:space-y-0">
+        <h2 className="font-semibold text-lg">Professional Summary</h2>
+        <p className="text-muted-foreground text-sm tracking-tight">{summary}</p>
       </section>
       <Separator />
     </>

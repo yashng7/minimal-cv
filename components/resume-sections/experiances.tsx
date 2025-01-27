@@ -9,32 +9,32 @@ type ExperienceProps = {
 export function Experience({ experience }: ExperienceProps) {
   return (
     <>
-      <section className="space-y-2">
-        <h2 className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-200">
-          Work Experience
-        </h2>
+      <section className="space-y-1 print:space-y-0">
+        <h2 className="text-lg font-semibold">Work Experience</h2>
         {experience.map((job, index) => (
           <Card
             key={`${job.company}-${index}`}
-            className="p-3 print:p-0 print:shadow-none print:border-0"
+            className="shadow-none border-none"
           >
-            <div className="flex justify-between items-start">
+            <div className="flex justify-between items-start mb-1">
               <div>
-                <h3 className="font-semibold text-gray-800 dark:text-gray-300 text-sm">
-                  {job.role}
-                </h3>
+                <h3>{job.role}</h3>
                 <p className="text-sm text-muted-foreground">{job.company}</p>
               </div>
               {job.period && (
-                <span className="text-sm text-muted-foreground whitespace-nowrap">
+                <span className="font-semibold text-sm whitespace-nowrap">
                   {job.period}
                 </span>
               )}
             </div>
             {job.achievements && job.achievements.length > 0 && (
-              <ul className="list-disc list-outside ml-4 mt-2 text-sm text-muted-foreground space-y-1">
+              <ul
+                className={`list-disc ml-4 text-sm text-muted-foreground space-y-1 ${
+                  index < experience.length - 1 ? "mb-2" : ""
+                }`}
+              >
                 {job.achievements.map((achievement, idx) => (
-                  <li key={idx} className="print:text-xs">
+                  <li key={idx} className="print:text-xs tracking-tight">
                     {achievement}
                   </li>
                 ))}
@@ -43,7 +43,7 @@ export function Experience({ experience }: ExperienceProps) {
           </Card>
         ))}
       </section>
-      <Separator/>
+      <Separator />
     </>
   );
 }

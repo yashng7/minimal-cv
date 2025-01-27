@@ -30,7 +30,7 @@ export default function Portfolio() {
       <div className="max-w-[8.5in] mx-auto">
         {/* Actions */}
         <div className="flex justify-end gap-3 mb-6 print:hidden">
-          <Button variant="outline" onClick={() => handlePrint()}>
+          <Button variant="outline" onClick={() => handlePrint()} className="rounded-none">
             <Printer className="h-4 w-4 mr-2" /> Print
           </Button>
           <ModeToggle />
@@ -39,7 +39,7 @@ export default function Portfolio() {
         {/* Content */}
         <div
           ref={contentRef}
-          className="space-y-4 border p-4 rounded-lg shadow-sm print:shadow-none print:p-0 print:border-0 print:space-y-2"
+          className="flex flex-col gap-2 border p-4 print:shadow-none print:p-0 print:border-0"
         >
           <Header profile={resumeContent.profile} />
           {resumeContent.summary && <Summary summary={resumeContent.summary} />}

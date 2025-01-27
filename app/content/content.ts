@@ -37,8 +37,8 @@ export interface ResumeContent {
   certifications?: Array<{
     title: string;
     subtitle: string;
-    description: string;
-    link: string;
+    description?: string;
+    link?: string;
     period?: string;
     achievements?: string[];
   }>;
@@ -53,7 +53,7 @@ export const resumeContent = {
     email: "example@email.com",
     phone: "+91 123456789",
     links: {
-      website: "https://yashwantgawande.com",
+      website: "https://example.com",
       github: "https://github.com",
       linkedin: "https://linkedin.com",
     },
@@ -139,7 +139,6 @@ export const resumeContent = {
         "Developed and deployed RESTful APIs using Node.js and Express",
         "Built CRUD applications with MongoDB",
         "Implemented JWT authentication for secure user access",
-        "Created unit tests to ensure API reliability",
       ],
       link: "https://www.freecodecamp.org/",
       period: "Jan - 2020",

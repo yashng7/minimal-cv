@@ -9,32 +9,32 @@ type EducationProps = {
 export function Education({ education }: EducationProps) {
   return (
     <>
-      <section className="space-y-2">
-        <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-200">
+      <section className="space-y-1 print:space-y-0">
+        <h2 className="text-lg font-semibold">
           Education
         </h2>
         {education.map((edu, index) => (
           <Card
             key={`${edu.degree}-${index}`}
-            className="p-3 print:p-0 print:shadow-none print:border-0"
+            className="shadow-none border-0"
           >
-            <div className="flex justify-between items-start">
+            <div className="flex justify-between items-start mb-1">
               <div>
-                <h3 className="font-semibold text-gray-800 dark:text-gray-300 text-sm">
+                <h3>
                   {edu.degree}
                 </h3>
                 <p className="text-sm text-muted-foreground">{edu.school}</p>
               </div>
               {edu.period && (
-                <span className="text-sm text-muted-foreground whitespace-nowrap">
+                <span className="font-semibold text-sm whitespace-nowrap">
                   {edu.period}
                 </span>
               )}
             </div>
             {edu.description && edu.description.length > 0 && (
-              <ul className="list-disc list-outside ml-4 mt-2 text-sm text-muted-foreground space-y-1">
+              <ul className="list-disc ml-4 text-sm text-muted-foreground space-y-1">
                 {edu.description.map((desc, idx) => (
-                  <li key={idx} className="print:text-xs">
+                  <li key={idx} className="print:text-xs tracking-tight">
                     {desc}
                   </li>
                 ))}
